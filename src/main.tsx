@@ -1,14 +1,14 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import App from './App'
-import {observer} from 'mobx-react';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { observer } from 'mobx-react';
+import App from './App';
 
-import './styles/reset.css'
-import './styles/global.css'
+import './styles/reset.css';
+import './styles/global.css';
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
-  document.getElementById('root')
-)
+  document.getElementById('root'),
+);
