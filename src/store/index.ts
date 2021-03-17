@@ -1,17 +1,16 @@
 import { createContext, useContext } from 'react';
-import { AppStore } from './app';
+import { AppStore } from './modules/app';
+import { UserStore } from './modules/user';
 
 function createStores() {
   return {
     appStore: new AppStore(),
+    userStore: new UserStore(),
   };
 }
 
 const store = createStores();
-
 const StoreContext = createContext(store);
-
-// hooks 使用笔记看这里 -> https://github.com/olivewind/blog/issues/1
 const useStores = () => useContext(StoreContext);
 
 function useAppStore() {
@@ -19,8 +18,14 @@ function useAppStore() {
   return appStore;
 }
 
+function useUserStore() {
+  const { userStore } = useStores();
+  return userStore;
+}
+
 export {
   store,
-  useAppStore,
   StoreContext,
+  useAppStore,
+  useUserStore,
 };

@@ -82,6 +82,7 @@ module.exports = {
     'no-underscore-dangle': 0,
     'class-methods-use-this': 0,
     'no-unused-vars': 0,
+    'arrow-parens': ['error', 'as-needed'],
     // for (let i = 0; i < len; i++)
     'no-plusplus': 0,
     // https://eslint.org/docs/rules/no-continue
