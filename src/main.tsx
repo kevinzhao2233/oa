@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { observer } from 'mobx-react';
 import App from './App';
 
 import './styles/reset.css';
 import './styles/global.css';
+import 'antd/dist/antd.css';
 
 ReactDOM.render(
   <React.StrictMode>

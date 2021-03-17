@@ -22,7 +22,7 @@ module.exports = {
     {
       files: ['*.ts', '*.tsx'],
       rules: {
-        '@typescript-eslint/no-unused-vars': [0, { args: 'none' }],
+        '@typescript-eslint/no-unused-vars': [1, { args: 'none' }],
         'no-unused-expressions': 'off',
         '@typescript-eslint/no-unused-expressions': 2,
       },
@@ -50,6 +50,9 @@ module.exports = {
 
     'import/extensions': 0,
     'import/no-cycle': 0,
+    'import/no-absolute-path': 0,
+    'import/no-unresolved': 0,
+    'import/prefer-default-export': 0,
     'import/no-extraneous-dependencies': [
       'error',
       {
