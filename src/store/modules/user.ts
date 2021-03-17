@@ -29,7 +29,7 @@ export class UserStore {
     return this.userInfo.id;
   }
 
-  setUserInfo(data: UserInfo) {
+  setUserInfo = (data: UserInfo) => {
     this.userInfo = data;
   }
 
