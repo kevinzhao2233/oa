@@ -13,7 +13,7 @@ class Home extends React.Component {
       <div>
         <div>A</div>
         <div>数量：{count}
-          <Button onClick={() => setCount()}>+</Button>
+          <Button type="primary" onClick={() => setCount()}>+</Button>
         </div>
       </div>
     );

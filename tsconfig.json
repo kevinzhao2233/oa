@@ -22,7 +22,6 @@
       "/@/*": ["src/*"],
       "/@comps/*": ["src/components/*"],
       "/@assets/*": ["src/assets/*"],
-      "/@router/*": ["src/router/*"],
       "/@store/*": ["src/store/*"],
       "/@pages/*": ["src/pages/*"],
     },
