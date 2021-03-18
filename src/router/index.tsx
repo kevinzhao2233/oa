@@ -1,12 +1,12 @@
 import React from 'react';
-import { Route, Switch, BrowserRouter } from 'react-router-dom';
+import { Route, Switch, HashRouter } from 'react-router-dom';
 import HomePage from '/@pages/home/index';
 
 // 异步加载组件
 const AboutPage = React.lazy(() => import('/@pages/about'));
 
 const RouterContainer: React.FC = () => (
-  <BrowserRouter>
+  <HashRouter>
     <Switch>
       <Route path="/about">
         <AboutPage />
@@ -15,7 +15,7 @@ const RouterContainer: React.FC = () => (
         <HomePage />
       </Route>
     </Switch>
-  </BrowserRouter>
+  </HashRouter>
 );
 
 export default RouterContainer;
