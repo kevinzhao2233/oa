@@ -2,7 +2,7 @@ import React from 'react';
 import { observer } from 'mobx-react';
 import { useUserStore } from '/@store/index';
 import { Button } from 'antd';
-import './index.scss';
+import './index.less';
 
 function About() {
   const { userInfo, getUserId, setUserInfo } = useUserStore();

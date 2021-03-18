@@ -47,6 +47,9 @@ export default defineConfig({
         // 重写 less 变量，定制样式
         modifyVars: themeVariables,
       },
+      scss: {
+        additionalData: '@import "./src/styles/variables.scss";',
+      },
     },
   },
 });
